@@ -1,0 +1,117 @@
+:root{
+  --Softorange: hsl(35, 77%, 62%);
+--Softred: hsl(5, 85%, 63%);
+--Off-white: hsl(36, 100%, 99%);
+--Grayishblue: hsl(233, 8%, 79%);
+--Darkgrayishblue: hsl(236, 13%, 42%);
+--Verydarkblue: hsl(240, 100%, 5%);
+}
+@font-face{
+  font-family: Bold;
+  src: url("/Inter-Bold.ttf");
+}
+@font-face{
+  font-family: xtrabold;
+  src: url("/Inter-ExtraBold.ttf");
+}
+@font-face{
+  font-family: regular;
+  src: url("/Inter-Regular.ttf");
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: var(--Off-white);
+  padding: 15px;
+  font-family: regular;
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+nav{
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+#logo{
+  height: 35px;
+}
+#menu{
+  height: 25px;
+  width: 45px;
+}
+nav .nav-links{
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 65%;
+  background: var(--Off-white);
+  padding: 30px;
+  display: none;
+}
+.nav-links #close-menu{
+  position: relative;
+  left: calc(100% - 30px);
+}
+nav .nav-links a{
+  text-decoration: none;
+  color: var(--Verydarkblue);
+  cursor: pointer;
+  display: block;
+  margin-top: 30px;
+  font-weight: 500;
+}
+nav .nav-links a:hover{
+  color: var(--Softred);
+  outline: none;
+}
+header{
+  grid-area: header;
+  height: 700px;
+}
+header .web3-image{
+  background-image: url("/image-web-3-mobile.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  margin: 20px 0;
+}
+header .header-content{
+  margin: 0px 10px 0 0;
+}
+header .header-content section h1{
+  font-family: xtrabold;
+  font-size: 40px;
+  font-weight: 900;
+  width: 350px;
+  line-height: 40px;
+}
+header .header-content section p{
+  padding: 15px 0;
+  color: var(--Darkgrayishblue);
+  font-size: 14px;
+  font-family: regular;
+  font-weight: 550;
+  line-height: 25px;
+}
+header .header-content section button{
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  background: var(--Softred);
+  color: var(--Off-white);
+  border: none;
+  outline: none;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+header .header-content section button:hover{
+  background: var(--Verydarkblue);
+}

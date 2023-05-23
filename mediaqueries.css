@@ -1,0 +1,91 @@
+@media (min-width: 415px){
+  body{
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main{
+  display: grid;
+  grid-template-areas: 
+  "nav nav nav"
+  "header header aside"
+  "footer footer footer";
+  grid-template-columns: 35% 35% 30%;
+  column-gap: 10px;
+}
+nav{
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 10px;
+  margin: 0 0 20px 0;
+}
+#menu , #close-menu{
+  display: none;
+}
+nav .nav-links{
+  display: flex;
+  align-items: center;
+  background: transparent;
+  gap: 30px;
+  position: relative;
+  height: 50px;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  z-index: 5;
+}
+nav .nav-links a{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+header{
+  grid-area: header;
+  height: 580px;
+}
+header .header-content{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+header .web3-image{
+  margin: 0px 0 20px 0;
+  background-image: url("/image-web-3-desktop.jpg");
+}
+header .header-content section h1{
+  width: 15rem;
+}
+header .header-content section p{
+  font-size: 115%;
+  font-weight: 600;
+}
+aside{
+  grid-area: aside;
+  height: 580px;
+}
+aside .aside-span{
+  padding: 27px 0;
+}
+footer{
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+footer section{
+  gap: 10px;
+  margin: 10px;
+  width: 33%;
+}
+footer section img{
+  height: calc(100% - 10px);
+}
+footer section div p{
+  line-height: 20px;
+}
+}
